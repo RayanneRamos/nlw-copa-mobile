@@ -14,7 +14,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      { fontsLoaded ? <Loading /> : <SignIn /> }
+      { fontsLoaded ? <SignIn /> : <Loading /> }
     </NativeBaseProvider>
   );
 }
