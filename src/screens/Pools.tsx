@@ -4,10 +4,11 @@ import { Header } from "../components/Header";
 import { Octicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { api } from "../services/api";
-import { useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { PoolCard, PoolCardProps } from "../components/PoolCard";
 import { Loading } from "../components/Loading";
 import { EmptyPoolList } from "../components/EmptyPoolList";
+import { useFocusEffect } from '@react-navigation/native';
 
 export function Pools() {
   const { navigate } = useNavigation();
@@ -35,9 +36,9 @@ export function Pools() {
     }
   }
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     fetchPools();
-  }, []);
+  }, []));
 
   return (
     <VStack flex={1} bgColor='gray.900'>
