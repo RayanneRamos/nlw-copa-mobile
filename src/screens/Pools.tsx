@@ -3,9 +3,29 @@ import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import { Octicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { api } from "../services/api";
+import { useEffect } from 'react';
+import { PoolCard } from "../components/PoolCard";
 
 export function Pools() {
   const { navigate } = useNavigation();
+
+  async function fetchPools() {
+    try {
+
+     const response = await api.get('/pools');
+     console.log(response.data.pools);
+
+    } catch (error) {
+
+    } finally {
+
+    }
+  }
+
+  useEffect(() => {
+    fetchPools();
+  }, []);
 
   return (
     <VStack flex={1} bgColor='gray.900'>
