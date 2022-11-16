@@ -1,7 +1,7 @@
 <h1 align="center"> NLW Copa - Mobile </h1>
 
 <p align="center">
-  <img alt="nlw-copa-web" src="https://user-images.githubusercontent.com/43352880/202010057-faa1d4d3-055a-4f54-8dd4-df2abd0427ae.png" width="100%">
+  <img alt="nlw-copa-web" src="https://user-images.githubusercontent.com/43352880/202309765-e0a1628a-189f-4154-a645-ef4da0978fd8.png" width="100%">
 </p>
 
 <p  align='center'>
